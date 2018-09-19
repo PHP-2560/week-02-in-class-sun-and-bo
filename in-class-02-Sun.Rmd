@@ -55,7 +55,7 @@ names(rain.df) <- c("year","month","day",seq(0,23))
 names(rain.df) <- c("year","month","day",seq(0,23))
 
 ```
-this command assign new names to the each colomn of this dataframe. The last 24 columns represents the 24 hours of a day.
+This command assign new names to the each colomn of this dataframe. The last 24 columns represents the 24 hours of a day.
 
 ````
 7. Create a new column in the data frame called daily, which is the sum of the rightmost 24 columns. With this column, create a histogram of the values in this column, which are supposed to be daily rainfall values. What is wrong with this picture?
@@ -63,7 +63,7 @@ this command assign new names to the each colomn of this dataframe. The last 24 
 rain.df=mutate(rain.df,daily=apply(rain.df[,4:27],1,sum))
 hist(rain.df$daily)
 ```
-there are some negative values of rainfall, which can not be negative.
+There are some negative values of rainfall, which can not be negative.
 
 
 
@@ -75,5 +75,5 @@ rain.df.fix=mutate(rain.df.fix,daily=apply(rain.df.fix[,4:27],1,sum))
 hist(rain.df.fix$daily)
 ```
 
-Our group change the negative observations to NA, thus there will not be any negative rainfalls. Then we calculate the total rainfall of a day. And histogram looks better. 
+Our group change the negative observations to NA, thus there will not be any negative rainfalls at any time point. Then we calculate the total rainfall of a day, and still called it "daily". We can see there are no negative values in the daily from the histogram.
 
