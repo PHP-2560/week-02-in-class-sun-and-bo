@@ -4,7 +4,7 @@ Have one person fill in the names of who is doing this:
 
 1. _Chengqian Sun______________________________
 2. _Mingxuan Bo______________________________
-3. _______________________________
+3. __Harold Lee_____________________________
 4. _______________________________
 
 # In-Class
